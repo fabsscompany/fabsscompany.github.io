@@ -1,0 +1,32 @@
+
+/* FOOTER */
+footer {
+    background-color: #a6cdc6;
+    padding: 20px;
+    text-align: center;
+    color: #16325b;
+    font-size: 14px;
+}
+
+.footer-container {
+    max-width: 600px;
+    margin: auto;
+}
+
+.footer-logo img{
+    width: 120px;
+    height: 20px;
+    margin-bottom: -10px;
+
+}
+
+footer a {
+    text-decoration: none;
+    color: #27445d;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+footer a:hover {
+    color: #19647e;
+}

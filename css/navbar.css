@@ -1,0 +1,56 @@
+* {
+    font-family: "Poppins", serif;
+    font-weight: bold;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    white-space: nowrap;
+    /* Mencegah teks Logic Coffee terpisah */
+    flex-shrink: 0;
+}
+.brand-logo {
+    width: 100px;
+    height: 55px;
+    align-items: center !important;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #16325b;
+    font-weight: 500;
+    font-family: "Poppins", serif;
+}
+
+.nav-links a:hover {
+    color: #227b94;
+}
+
+.contact-button {
+    background: #227b94;
+    color: white !important;
+    padding: 8px 12px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.contact-button:hover {
+    background: #27445d;
+}

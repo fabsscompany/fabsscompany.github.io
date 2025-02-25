@@ -1,0 +1,200 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0px;
+}
+
+h1 {
+    color: #27445d;
+    font-size: 35px;
+}
+
+h2,
+h3 {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+}
+
+p,
+a,
+button {
+    font-family: "Inter", serif;
+    font-weight: 400;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    gap: 50px;
+}
+
+.hero-content {
+    max-width: 600px;
+}
+
+.hero h1 {
+    font-family: "Poppins", sans-serif;
+    font-size: 55px;
+    font-weight: bold;
+    color: #16325b;
+    margin-bottom: -20px;
+}
+
+.hero h2 {
+    font-size: 24px;
+    color: #27445d;
+}
+
+button {
+    background-color: #227b94;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #27445d;
+}
+
+.about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 80px 50px;
+}
+
+
+.about-content {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    max-width: 900px;
+}
+
+.about h3 {
+    margin-top: -10px;
+    font-size: 25px;
+    color: #444;
+    text-align: left;
+    text-align: justify;
+}
+
+/* OUR SERVICES */
+.services {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.service-container {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    /* Pastikan semua box memiliki tinggi yang sama */
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.service-box {
+    background: #f8f8f8;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    border-radius: 10px;
+    width: 250px;
+    text-align: left;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    min-height: 120px;
+    /* Atur tinggi minimal agar semua box sejajar */
+}
+
+.service-box p {
+    flex-grow: 1;
+    /* Memastikan deskripsi menyesuaikan ruang yang tersedia */
+    font-size: 14px;
+    color: #333;
+}
+
+.service-box button {
+    background: #19647e;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    margin-top: auto;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.service-box button:hover {
+    background: #227b94;
+}
+
+/* PROJECTS */
+.projects {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.project-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.project-box {
+    background: #cfcfcf;
+    padding: 50px;
+    border-radius: 10px;
+    width: 200px;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* CONTACT SECTION */
+.contact {
+    text-align: center;
+    padding: 50px 20px;
+    color: #16325b;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.contact-info {
+    text-align: left;
+    max-width: 500px;
+    margin: 0 auto;
+    /* Auto pada kiri & kanan bikin dia ke tengah */
+}
+
+.contact-info p {
+    font-size: 22px;
+    margin-top: -10px;
+}
+
+.contact-info ul {
+    list-style: none;
+    padding: 0;
+    font-family: "Nunito", serif;
+}
+
+.contact-info ul li {
+    margin-bottom: 10px;
+    font-weight: normal;
+    
+}
+
+.contact-info a {
+    text-decoration: none;
+    color: #16325b;
+}
