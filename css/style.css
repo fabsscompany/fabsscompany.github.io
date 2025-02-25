@@ -1,3 +1,8 @@
+html {
+    scroll-behavior: smooth;
+  }
+  
+
 body {
     font-family: 'Poppins', sans-serif;
     margin: 0px;
@@ -138,6 +143,7 @@ button:hover {
 .projects {
     text-align: center;
     padding: 50px 20px;
+    
 }
 
 .project-container {
@@ -148,13 +154,36 @@ button:hover {
 }
 
 .project-box {
-    background: #cfcfcf;
-    padding: 50px;
+    width: 300px;
+    background: #ffffff;
+    padding: 15px;
     border-radius: 10px;
-    width: 200px;
+    box-shadow: 0 9px 8px rgba(0, 0, 0, 0.2);
     text-align: center;
-    font-weight: bold;
-}
+    text-decoration-color: #227b94;
+  
+  }
+
+.project-box img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+  .project-box h3 {
+    margin: 10px 0;
+  }
+  
+  .project-box p {
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .project-box a {
+    text-decoration: none;
+    color: inherit;
+  }
 
 /* CONTACT SECTION */
 .contact {
@@ -198,3 +227,5 @@ button:hover {
     text-decoration: none;
     color: #16325b;
 }
+
+
