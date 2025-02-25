@@ -23,6 +23,9 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
   </head>
   <body>
     <nav class="navbar">
@@ -30,11 +33,11 @@
         <img src="img/fabss_logo.png" alt="Brand Logo" class="brand-logo" />
       </div>
       <ul class="nav-links">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About Us</a></li>
-        <li><a href="#">Services</a></li>
-        <li><a href="#">Projects</a></li>
-        <li><a href="#" class="contact-button">Contact Us</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#service">Services</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact" class="contact-button">Contact Us</a></li>
       </ul>
     </nav>
     <section class="hero">
@@ -49,11 +52,11 @@
       <div class="hero-image"><i class="fas fa-laptop-code fa-5x"></i></div>
     </section>
 
-    <section class="about">
-      <h1>About Us</h1>
+    <section id="about" class="about" data-aos="fade-up">
+      <h1 data-aos="fade-down">About Us</h1>
       <div class="about-content">
-        <div class="about-image"><i class="fas fa-users fa-5x"></i></div>
-        <div class="about-text">
+        <div class="about-image" data-aos="fade-right"><i class="fas fa-users fa-5x"></i></div>
+        <div class="about-image"><img src="img/about.png" alt="" data-aos="fade-left">
           <h3>
             FABSS Company helps businesses grow with complete digital solutions.
             From website development, software creation, and hosting to software
@@ -68,17 +71,17 @@
       </div>
     </section>
 
-    <section class="services">
+    <section id="service" class="services">
       <h1>Our Services</h1>
       <div class="service-container">
-        <div class="service-box">
+        <div class="service-box" data-aos="zoom-in">
           <h3><i class="fas fa-code"></i> Website & Software Development</h3>
           <p>
             We build custom websites, e-commerce stores, POS systems, and CMS
             platforms from start to finish. Need hosting or maintenance? We’ve
             got you covered!
           </p>
-          <button>Build Your Website Today!</button>
+          <button data-aos="flip-up">Build Your Website Today!</button>
         </div>
         <div class="service-box">
           <h3><i class="fas fa-paint-brush"></i> Graphic Design & Branding</h3>
@@ -87,7 +90,7 @@
             content, to digital certificates—we create professional designs that
             make an impact.
           </p>
-          <button>Design Your Brand Now!</button>
+          <button data-aos="flip-up">Design Your Brand Now!</button>
         </div>
         <div class="service-box">
           <h3>
@@ -98,7 +101,7 @@
             and administrative support to keep everything organized and
             efficient.
           </p>
-          <button>Get Business Support!</button>
+          <button data-aos="flip-up">Get Business Support!</button>
         </div>
         <div class="service-box">
           <h3><i class="fas fa-chart-line"></i> SEO & Digital Optimization</h3>
@@ -106,23 +109,48 @@
             We help your website rank higher on Google with SEO and Google
             Console setup so more people can find your business online.
           </p>
-          <button>Boost Your Online Presence!</button>
+          <button data-aos="flip-up">Boost Your Online Presence!</button>
         </div>
       </div>
     </section>
 
-    <section class="projects">
+    <section id="projects" class="projects">
       <h1>Projects & Creations</h1>
       <div class="project-container">
-        <div class="project-box"><i class="fas fa-globe fa-4x"></i></div>
-        <div class="project-box"><i class="fas fa-desktop fa-4x"></i></div>
-        <div class="project-box"><i class="fas fa-mobile-alt fa-4x"></i></div>
+        <div class="project-box">
+          <a href="https://logiccoffee.id.biz.id/" target="_blank">
+            <img src="img/logic.png" alt="Logic Coffee Website">
+            <h3>Logic Coffee</h3>
+            <p>Website resmi Logic Coffee, tempat nongkrong dan ngopi favorit di kampus!</p>
+          </a>
+        </div>
+    
+        <div class="project-box">
+          <a href="https://example.com/" target="_blank">
+            <img src="images/project2.jpg" alt="Project 2">
+            <h3>Project 2</h3>
+            <p>Deskripsi singkat tentang project ini.</p>
+          </a>
+        </div>
+    
+        <div class="project-box">
+          <a href="https://example.com/" target="_blank">
+            <img src="images/project3.jpg" alt="Project 3">
+            <h3>Project 3</h3>
+            <p>Deskripsi singkat lainnya.</p>
+          </a>
+        </div>
       </div>
     </section>
+    
+    
+    
 
-    <section class="contact">
+    <section id="contact" class="contact">
       <h1>Let's Talk!</h1>
       <div class="contact-container">
+
+        <div class="contact-image"><img src="img/contact_us2.png" alt=""></div>
         <!-- Informasi Kontak -->
         <!-- simpan grafis disini -->
         <div class="contact-info">
@@ -145,7 +173,7 @@
               <strong>Prefer a quick chat?</strong> Reach us on social media:
             </li>
             <li>
-              <a href="#"><i class="fab fa-instagram"></i> Instagram</a> |
+              <a href="https://www.instagram.com/fabsscompany.id?igsh=YWI3NmplM21kNmJi"><i class="fab fa-instagram"></i> Instagram</a> |
               <a href="#"><i class="fab fa-linkedin"></i> LinkedIn</a> |
               <a href="#"><i class="fab fa-facebook"></i> Facebook</a>
             </li>
@@ -168,4 +196,6 @@
       </div>
     </footer>
   </body>
+  <script src="js/script.js"></script>
+
 </html>
