@@ -29,17 +29,22 @@
   </head>
   <body>
     <nav class="navbar">
-      <div class="brand">
+    <div class="brand">
         <img src="img/fabss_logo.png" alt="Brand Logo" class="brand-logo" />
-      </div>
-      <ul class="nav-links">
+    </div>
+    <div class="hamburger" onclick="toggleMenu()">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    <ul class="nav-links">
         <li><a href="index.html">Home</a></li>
         <li><a href="#about">About Us</a></li>
         <li><a href="#service">Services</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#contact" class="contact-button">Contact Us</a></li>
-      </ul>
-    </nav>
+    </ul>
+</nav>
     <section class="hero">
       <div class="hero-content">
         <h1>Transforming Ideas into Digital Solutions</h1>
@@ -196,5 +201,9 @@
     </footer>
   </body>
   <script src="js/script.js"></script>
-
+<script>
+function toggleMenu() {
+    document.querySelector('.nav-links').classList.toggle('active');
+}
+</script>
 </html>

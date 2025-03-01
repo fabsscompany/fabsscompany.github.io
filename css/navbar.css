@@ -54,3 +54,48 @@
 .contact-button:hover {
     background: #27445d;
 }
+/* Responsive Navbar */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+}
+
+.hamburger div {
+    width: 30px;
+    height: 3px;
+    background-color: #16325b;
+    transition: 0.3s;
+}
+
+.nav-links {
+    display: flex;
+}
+
+@media (max-width: 768px) {
+    .hamburger {
+        display: flex;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background: white;
+        width: 200px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        padding: 10px;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links li {
+        padding: 10px;
+        text-align: center;
+    }
+}
